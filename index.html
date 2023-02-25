@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="sketch.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="container">
+            <div id="settings">
+                <div class="setting">
+                    <input type="radio" name="mode" id="color-mode" checked>
+                    <label for="color-mode" class="hover">Color mode</label>
+                    <input type="radio" name="mode" id="rainbow-mode">
+                    <label for="rainbow-mode" class="hover">Rainbow mode</label>
+                </div>
+                <div class="setting">
+                    <button id="clear" class="hover">Clear</button>
+                </div>
+                <div class="setting">
+                    <p id="size-disp">16 x 16</p>
+                    <input type="range" name="size" id="size" min="2" max="100" value="16">
+                </div>
+            </div>
+            <div id="sketch-container">
+                <div id="sketch"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
